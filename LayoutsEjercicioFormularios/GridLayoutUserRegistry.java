@@ -1,4 +1,4 @@
-package Layouts;
+package LayoutsEjercicioFormularios;
 
 import java.awt.*;
 
