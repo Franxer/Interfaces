@@ -13,11 +13,17 @@ public class BorderLayoutUserRegistry extends JFrame{
         p1.setLayout(new GridLayout(0,2));
 
         //Añadir los Jlabel y Jtextfield
-        JLabel jlnombre = new JLabel("nombre");
-        JLabel jlapellidos = new JLabel("apellidos");
-        JLabel jlciudad = new JLabel("ciudad");
-        JLabel jlcurso = new JLabel("curso");
-        JLabel jlnacimiento = new JLabel("nacimiento");
+        JLabel jlnombre = new JLabel("Nombre");
+        JLabel jlapellidos = new JLabel("Apellidos");
+        JLabel jlciudad = new JLabel("Ciudad");
+        JLabel jlcurso = new JLabel("Curso");
+        JLabel jlnacimiento = new JLabel("Nacimiento");
+
+        ButtonGroup grupobotones = new ButtonGroup();
+        JRadioButton jrestudiante = new JRadioButton("Estudiante");
+        JRadioButton jrprofesor = new JRadioButton("Profesor");
+        grupobotones.add(jrprofesor);
+        grupobotones.add(jrestudiante);
 
         JTextField jtnombre = new JTextField();
         JTextField jtapellidos = new JTextField();
@@ -36,6 +42,8 @@ public class BorderLayoutUserRegistry extends JFrame{
         p1.add(jtcurso);
         p1.add(jlnacimiento);
         p1.add(jtnacimiento);
+        p1.add(jrestudiante);
+        p1.add(jrprofesor);
         
         //Crear panel p2 para englobar p1 y el campo de texto
         JPanel p2 = new JPanel();
