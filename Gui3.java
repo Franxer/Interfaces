@@ -8,7 +8,7 @@ public class Gui3 extends JFrame{
         setLayout(new BorderLayout());
         //Crear panel p1 para los botones y creamos el grid layout
         JPanel p1 = new JPanel();
-        p1.setLayout(new GridLayout(4,3));
+        p1.setLayout(new BorderLayout(4,3));
         //Añadir los botones al panel
         for(int i = 1; i<=9;i++){
             p1.add(new JButton(""+i));

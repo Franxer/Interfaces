@@ -29,9 +29,3 @@ public class Gui6 extends JFrame {
     }
 }
 
-class OyenteBoton implements ActionListener{
-    public void actionPerformed(ActionEvent e){
-        string valor = campoValor.getText();
-        resultado.setText(valor);
-    }
-}
